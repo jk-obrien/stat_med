@@ -131,7 +131,7 @@ rm(list=c(
 # The European cut-off is >= 5.
 us_ac_high <- rep_len("No",length(audit_c))
 us_ac_high[audit_c >= 4 & prev$sex=="Male"]   <- "Yes"
-us_ac_high[audit_c >= 4 & prev$sex=="Female"] <- "Yes"
+us_ac_high[audit_c >= 3 & prev$sex=="Female"] <- "Yes"
 
 eu_ac_high <- rep_len("No",length(audit_c))
 eu_ac_high[audit_c >= 5] <- "Yes"
