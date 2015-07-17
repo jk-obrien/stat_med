@@ -188,4 +188,4 @@ x <- data.frame(
   prop_kids=kids/tot_kids
 )
 
-round(x,4)
+write.table(x,"Prevalence_2010_11_Summary.txt",sep="\t")
